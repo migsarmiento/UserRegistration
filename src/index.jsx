@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {RegistrationPanel} from './components/registration-panel';
+import {Provider} from 'react-redux';
+import {App} from './components/app';
+import configureStore from './redux/configureStore';
+
+let store = configureStore();
 
 ReactDOM.render(
-	<RegistrationPanel />,
+	<Provider store={store}>
+		<App/>
+	</Provider>,
 	document.getElementById('app')
 );
