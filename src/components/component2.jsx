@@ -12,16 +12,6 @@ let Component2 = React.createClass({
 		}
 	},
 	
-	componentWillReceiveProps(nextProps) {
-		console.log(nextProps.displayText);
-		this.setState({
-			firstName : nextProps.firstName,
-			lastName : nextProps.lastName,
-			age	:	nextProps.age,
-			displayText : nextProps.displayText
-		});
-	},
-	
 	render () {
 		if(this.state.displayText) {
 			return <div>
@@ -33,4 +23,4 @@ let Component2 = React.createClass({
 	}
 });
 
-export{Component2};
+export {Component2};
