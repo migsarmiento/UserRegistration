@@ -14,7 +14,7 @@ let RegistrationPanel =  React.createClass({
 		}
 	},
 	render: function() {
-		
+		var test = undefined;
 		return <div>
 			<Component1 />
 			<Component2 />
